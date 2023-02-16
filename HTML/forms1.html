@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM DEMO</title>
+</head>
+<body>
+    <h1>PINNACLE TUTORIALS - ADMISSION FORM</h1>
+    <hr />
+        <p>
+            <h3>Please fill the following details:</h3>
+        </p>
+ 
+    <form action="appli.html" method="post">
+        <fieldset>
+            <legend>Personal information:</legend>
+             <label for="fname">First name</label>:
+             <input type="text" id="fname" name="fname">
+             <br> <br>
+             <label for="lname">Last name</label>:
+             <input type="text" id="lname" name="lname">
+             <br> <br>
+        </fieldset>
+        <p>
+            <label>BATCH:</label>
+            <input type="radio" name="batch" value="morning">Morning
+            <input type="radio" name="batch" value="evening">Evening
+            <br>
+        </p>
+        <p>
+            <label>CHOOSE COURSE: </label>:
+            <select name="course">
+                <option>BA</option>
+                <option>BSC</option>
+                <option>BCOM</option>
+                <option>BBM</option>
+                <option selected>BCA</option>
+            </select>
+        </p>
+        <p>
+            <h3>Please tick the appropriate choice for coaching:</h3>
+
+            <label>
+            <input type="checkbox" name="choice" value="regular exam">REGULAR EXAM
+            </label>
+            
+            <label>
+            <input type="checkbox"name="choice" value="aptitude test">APTITUDE TEST 
+            </label>
+
+            <label>
+            <input type="checkbox" name="choice" value="skill based test"> SKILL BASED TEST 
+            </label>
+        </p>
+         <br> <br>
+        <p>
+            <h3>Provide your aspirations</h3>
+        </p>
+        
+        <p>
+            <textarea name="Aspirations" rows="3" cols="50">Brief and Concise</textarea>
+        </p>
+
+        <button>Submit</button>
+        <button>Reset</button>
+    </form>
+    
+</body>
+</html>
